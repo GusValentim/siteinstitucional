@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="scriptjs/script.js" defer></script>
+    <title>avaliação</title>
+</head>
+<body>
+
+    <!--- cabeçalho --->
+
+    <header class="menu-navegação">
+        <div class="logo-site"><h1> Solutions </h1></div>
+        <ul>
+           <li><a href="index.html">Inicio</a></li> 
+           <li><a href="sobre.html" >Sobre</a></li>
+           <li><a href="index.html" >Contato</a></li>
+        </ul>
+                <h1><a href="seinscreva.html" class="botao-sub">Se inscreva</a></h1>    
+    </header>
+
+    <!--- formulario conhecendo o cliente --->
+
+    <main class="form-avaliacao">
+        <div id="text">#</div>
+        <h1>
+            Gostariamos de saber mais sobre seu negócio!
+        </h1>
+            
+            <form class="form-ava" action="thank.html" action="form.php"  method="POST">
+                
+                <label for="name">Name:</label>
+                <input class="input-ava" type='text' id='name' name='name'  method="POST"  required>
+        
+                <label for="email">E-mail:</label>
+                <input class="input-ava" type='email' id='email' name='email' method="POST"  required>
+                
+                <a href="thank.html"><input class="contato-enviar" type="submit" value="Enviar" id='intext' name='intext'></a> <!--colocar value "submit" caso não funcione-->
+
+                <textarea type="text" id="textoarea" method="post"
+                rows="10" cols="100" maxlength="1000" 
+                placeholder="Este espaço é reservado para você se apresentar. Conte sua historia, aproveite para colocar o link de seu site e suas redes sociais.">
+                </textarea>
+            </form>
+    </main>
+
+<!--- rodapé --->
+
+    <footer>
+        &copy; Solutions
+    </footer>
+</body>
+</html>
